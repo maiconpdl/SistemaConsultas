@@ -1,0 +1,42 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.formLogin{
+    text-align: center;
+    display: flexbox;
+    width: 40%; 
+    margin-left: 30%;
+
+}
+
+.inputLogin{
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(225, 236, 125);
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.btn{
+    text-align: center;
+    background-color: #15e920;
+    width: 38%;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    padding: -10px;
+    margin-top: 50px;
+}
