@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/maicon/Documentos/Projetos/SistemaConsultas
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Atendimento/Agenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRlbmRpbWVudG8vQWdlbmRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroPaciente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL2NhZGFzdHJvUGFjaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroProfissional.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL2NhZGFzdHJvUHJvZmlzc2lvbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

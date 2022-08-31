@@ -16328,8 +16328,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Atendimento/Agenda.cshtml",
+      "TargetPath": "Views\\Atendimento\\Agenda.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroProfissional.cshtml",
+      "TargetPath": "Views\\Cadastros\\cadastroProfissional.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroPaciente.cshtml",
+      "TargetPath": "Views\\Cadastros\\cadastroPaciente.cshtml",
       "FileKind": "mvc"
     },
     {
