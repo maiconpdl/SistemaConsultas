@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 
 namespace SistemaConsultas.Controllers
 {
-    [Route("[controller]")]
     public class CadastrosController : Controller
     {
         private readonly ILogger<CadastrosController> _logger;
@@ -24,6 +23,12 @@ namespace SistemaConsultas.Controllers
         {
             return View();
         }
+
+        public IActionResult cadastroProfissional()
+        {
+            return View();
+        }
+
 
 
         

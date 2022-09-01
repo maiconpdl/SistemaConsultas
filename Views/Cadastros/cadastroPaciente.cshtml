@@ -1,25 +1,22 @@
+@model SistemaConsultas.Models.Usuario
 <div class="container">
-    <form>
-        <div class="dadosPessoais">
-            <label>Nome:</label>
-            <input type="text" placeholder="CPF"/>
-            <input type="text" placeholder="Nome"/>
-            <input type="text" placeholder="Data Nascimento"/>
-            <input type="text" placeholder="Sexo"/>
-            <input type="text" placeholder="Telefone"/>
-            <input type="text" placeholder="Nome da Mãe"/>
-
-        </div>
-        <div class="dadosPessoais">
-            <label>Nome:</label>
-            <input type="text" placeholder="CEP"/>
-            <input type="text" placeholder="País"/>
-            <input type="text" placeholder="Estado"/>
-            <input type="text" placeholder="Cidade"/>
-            <input type="text" placeholder="Bairro"/>
-            <input type="text" placeholder="Rua"/>
-            <input type="text" placeholder="Número"/>
-        </div>
-
+    <form asp-controller="Usuario" asp-action="salvarUsuario" class="formLogin">
+        
+            <input type="text" placeholder="CPF" class="inputCadastro"/>
+            <input type="text" placeholder="Nome" class="inputCadastro"/>
+            <input type="text" placeholder="Data Nascimento" class="inputCadastro"/>
+            <input type="text" placeholder="Sexo" class="inputCadastro"/>
+            <input type="text" placeholder="Telefone" class="inputCadastro"/>
+            <input type="text" placeholder="Nome da Mãe" class="inputCadastro"/>
+        
+            <input type="text" placeholder="CEP" class="inputCadastro"/>
+            <input type="text" placeholder="País" class="inputCadastro"/>
+            <input type="text" placeholder="Estado" class="inputCadastro"/>
+            <input type="text" placeholder="Cidade" class="inputCadastro"/>
+            <input type="text" placeholder="Bairro" class="inputCadastro"/>
+            <input type="text" placeholder="Rua" class="inputCadastro"/>
+            <input type="text" placeholder="Número" class="inputCadastro"/>
+        
     </form>
 </div>
+
