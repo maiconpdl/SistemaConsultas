@@ -6,9 +6,9 @@ namespace Projeto.Controllers;
 
 public class UsuarioController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<UsuarioController> _logger;
 
-    public UsuarioController(ILogger<HomeController> logger)
+    public UsuarioController(ILogger<UsuarioController> logger)
     {
         _logger = logger;
     }
