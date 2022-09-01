@@ -94,7 +94,6 @@ D:/Users/mplima/Documents/Projeto/SistemaConsultas/obj/Debug/net6.0/Projeto.genr
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/Projeto.RazorAssemblyInfo.cs
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/staticwebassets.build.json
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/staticwebassets.development.json
-/home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/scopedcss/bundle/Projeto.styles.css
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/scopedcss/projectbundle/Projeto.bundle.scp.css
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/Projeto.dll
@@ -102,3 +101,4 @@ D:/Users/mplima/Documents/Projeto/SistemaConsultas/obj/Debug/net6.0/Projeto.genr
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/Projeto.pdb
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/Projeto.genruntimeconfig.cache
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/ref/Projeto.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout2.cshtml.rz.scp.css

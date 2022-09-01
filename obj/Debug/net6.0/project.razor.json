@@ -16298,6 +16298,11 @@
   "RootNamespace": "Projeto",
   "Documents": [
     {
+      "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Shared/_Layout2.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Usuario/cadastroUsuario.cshtml",
       "TargetPath": "Views\\Usuario\\cadastroUsuario.cshtml",
       "FileKind": "mvc"
@@ -16325,11 +16330,6 @@
     {
       "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroProfissional.cshtml",
       "TargetPath": "Views\\Cadastros\\cadastroProfissional.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {

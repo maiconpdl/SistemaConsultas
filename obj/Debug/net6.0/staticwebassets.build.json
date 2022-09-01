@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NtqameAXk2S/IpuhgDx1kWIBqWiaNRkXE7N5reIvIz0=",
+  "Hash": "R6zli088eIh+S+TFY85r4z0puN3JrQDwgs9U/FbqR5w=",
   "Source": "Projeto",
   "BasePath": "_content/Projeto",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/home/maicon/Documentos/Projetos/SistemaConsultas/wwwroot/css/site2.css",
+      "SourceId": "Projeto",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/maicon/Documentos/Projetos/SistemaConsultas/wwwroot/",
+      "BasePath": "_content/Projeto",
+      "RelativePath": "css/site2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site2.css"
     },
     {
       "Identity": "/home/maicon/Documentos/Projetos/SistemaConsultas/wwwroot/favicon.ico",
