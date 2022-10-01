@@ -1,0 +1,45 @@
+@model SistemaConsultas.Models.Agenda
+<div class="container p-5">
+        <div class="border border-light rounded p-5 shadow">
+            <h6>Agendamento de Consulta</h6>
+            </hr>
+            
+            <form asp-controller="Agenda" asp-action="salvarAgendamento" class="formLogin">
+                <div class="form-group">
+                    <input asp-for="data" type="date" placeholder="    /    /    " class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="hora" type="text" placeholder="   :   " class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="especialidade" type="text" placeholder="Especialidade" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="profissional" type="text" placeholder="Profissional" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="paciente" type="text" placeholder="Paciente" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="submit" value="GRAVAR" class="btn btnForm btn-sm btn-outline-info"/>
+                        </div>
+                        <div class="pl-1 col-6">
+                            <a asp-area="" asp-controller="Cadastros" asp-action="Pacientes" class="btn btnForm btn-sm btn-outline-info">
+                            Cancelar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                    
+                
+            </form>
+        </div>
+
+</div>
+

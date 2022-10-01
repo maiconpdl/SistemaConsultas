@@ -1,0 +1,64 @@
+@model IEnumerable<SistemaConsultas.Models.Usuario>
+<div class="container p-5">
+    <div class="border border-light rounded p-5">
+        <table class="table table-striped table-hover table-sm">
+            <thead>
+                <tr class="thead-light">
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Data Nasc.
+                    </th>
+                    <th>
+                        Login
+                    </th>
+                    <th>
+                        Ações
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <a asp-area="" asp-controller="Usuario" asp-action="atualizarUsuario" class="btn-sm btn-outline-primary rounded-circle">
+                                    <i class=" fa fa-pencil-square-o"></i>
+                </a>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.dataNascimento)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.login)
+                        </td>
+                        <td>
+                            <div class="row">
+                               
+                                <form asp-controller="Usuario" asp-action="editarUsuario">
+                                    <button type="submit" class="btn btn-sm btn-outline-primary rounded-circle">
+                                        <i class="fa fa-duotone fa-pencil"></i>
+
+                                    </button>
+                                </form>
+                                
+                                <form asp-controller="Usuario" asp-action="excluirUsuario">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger rounded-circle">
+                                        <i class="fa fa-duotone fa-trash"></i>
+
+                                    </button>
+                                </form>
+
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-area="" asp-controller="Usuario" asp-action="cadastroUsuario" class="btn btn-sm btn-outline-info">
+            Novo
+        </a>
+    </div>
+</div>
