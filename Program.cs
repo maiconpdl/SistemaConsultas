@@ -1,6 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using SistemaConsultas.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<Contexto>(opcoes => opcoes.UseNpgsql(builder.Configuration.GetConnectionString("ConexaoBD")));
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -22,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

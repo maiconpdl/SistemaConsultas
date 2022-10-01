@@ -1,14 +1,72 @@
 @model SistemaConsultas.Models.Usuario
-<div class="container">
-    <form asp-controller="Usuario" asp-action="salvarUsuario" class="formLogin">
-        
-            <input asp-for="nome" type="text" placeholder="NOME" class="inputCadastroUsuario"/>
-            <input asp-for="dataNascimento" type="text" placeholder="DATA NASC." class="inputCadastroUsuario"/>
-            <input asp-for="login" type="text" placeholder="USUÁRIO" class="inputCadastroUsuario"/>
-            <input asp-for="senha" type="password" placeholder="SENHA" class="inputCadastroUsuario"/>
-            <input type="password" placeholder="CONFIRMA SENHA" class="inputCadastroUsuario"/>
-            <input type="button" value="ENTRAR" class="inputCadastroUsuario btn"/>
-        
-    </form>
+<div class="container p-5">
+        <div class="border border-light rounded p-5 shadow">
+            <h6>Cadastro de Usuário do Sistema</h6>
+            </hr>
+            
+            <form asp-controller="Usuario" asp-action="salvarUsuario" class="formLogin">
+                <div class="form-group">
+                    <input asp-for="cpf" type="text" placeholder="CPF" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="login" type="text" placeholder="Login" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="nome" type="text" placeholder="NOME" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="dataNascimento" type="text" placeholder="DATA NASC." class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="sexo" type="text" placeholder="Sexo" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="telefone" type="text" placeholder="Telefone" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="cep" type="text" placeholder="CEP" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="estado" type="text" placeholder="Estado" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="cidade" type="text" placeholder="Cidade" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="bairro" type="text" placeholder="Bairro" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="rua" type="text" placeholder="Rua" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="numero" type="text" placeholder="Número" class="inputCadastroUsuario form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="senha" type="password" placeholder="Senha" class="inputCadastroUsuario form-control form-control-sm"/> 
+                </div>
+                <div class="form-group">
+                    <input type="Password" placeholder="Confirmar Senha" class="inputCadastroUsuario form-control form-control-sm"/> 
+                </div>
+
+
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="submit" value="GRAVAR" class="btn btnForm btn-sm btn-outline-info"/>
+                        </div>
+                        <div class="col-6">
+                            <a asp-area="" asp-controller="Usuario" asp-action="Usuarios" class="btn btnForm btn-sm btn-outline-info">
+                            Cancelar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                    
+                
+            </form>
+        </div>
 </div>
 

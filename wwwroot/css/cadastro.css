@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.container{
+.container2{
     text-align: center;
     width: 80%;
     margin-top: 5%;
@@ -17,6 +17,8 @@
 
 }
 
+
+
 .inputCadastro{
     text-align: left;
     padding: 10px;
@@ -29,9 +31,10 @@
     font-weight: 700;
 }
 
-.btn{
+.btnForm{
     text-align: center;
     background-color: #15e920;
+    color: white;
     width: 38%;
     height: 50px;
     font-weight: 700;

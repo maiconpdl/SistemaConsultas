@@ -102,3 +102,12 @@ D:/Users/mplima/Documents/Projeto/SistemaConsultas/obj/Debug/net6.0/Projeto.genr
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/Projeto.genruntimeconfig.cache
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/ref/Projeto.dll
 /home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout2.cshtml.rz.scp.css
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Humanizer.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Npgsql.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/maicon/Documentos/Projetos/SistemaConsultas/obj/Debug/net6.0/Projeto.csproj.CopyComplete

@@ -17,3 +17,7 @@ $('.sistema').click(function(){
 $('.btnMenu').click(function(){
     $('.menu').toggleClass('mostra');
 });
+
+$('.btnFechar').click(function(){
+    $('.menu').toggleClass('fechar');
+});

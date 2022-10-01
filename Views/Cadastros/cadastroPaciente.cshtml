@@ -1,22 +1,62 @@
-@model SistemaConsultas.Models.Usuario
-<div class="container">
-    <form asp-controller="Usuario" asp-action="salvarUsuario" class="formLogin">
-        
-            <input type="text" placeholder="CPF" class="inputCadastro"/>
-            <input type="text" placeholder="Nome" class="inputCadastro"/>
-            <input type="text" placeholder="Data Nascimento" class="inputCadastro"/>
-            <input type="text" placeholder="Sexo" class="inputCadastro"/>
-            <input type="text" placeholder="Telefone" class="inputCadastro"/>
-            <input type="text" placeholder="Nome da Mãe" class="inputCadastro"/>
-        
-            <input type="text" placeholder="CEP" class="inputCadastro"/>
-            <input type="text" placeholder="País" class="inputCadastro"/>
-            <input type="text" placeholder="Estado" class="inputCadastro"/>
-            <input type="text" placeholder="Cidade" class="inputCadastro"/>
-            <input type="text" placeholder="Bairro" class="inputCadastro"/>
-            <input type="text" placeholder="Rua" class="inputCadastro"/>
-            <input type="text" placeholder="Número" class="inputCadastro"/>
-        
-    </form>
+@model SistemaConsultas.Models.Paciente
+<div class="container p-5">
+        <div class="border border-light rounded p-5 shadow">
+            <h6>Cadastro de Paciente</h6>
+            </hr>
+            
+            <form asp-controller="Cadastros" asp-action="salvarPaciente" class="formLogin">
+                <div class="form-group">
+                    <input asp-for="cpf" type="text" placeholder="CPF" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="nome" type="text" placeholder="NOME" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="dataNascimento" type="text" placeholder="DATA NASC." class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="sexo" type="text" placeholder="Sexo" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="telefone" type="text" placeholder="Telefone" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="cep" type="text" placeholder="CEP" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="estado" type="text" placeholder="Estado" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="cidade" type="text" placeholder="Cidade" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="bairro" type="text" placeholder="Bairro" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="rua" type="text" placeholder="Rua" class="inputCadastro form-control form-control-sm"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="numero" type="text" placeholder="Número" class="inputCadastro form-control form-control-sm"/>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="submit" value="GRAVAR" class="btn btnForm btn-sm btn-outline-info"/>
+                        </div>
+                        <div class="pl-1 col-6">
+                            <a asp-area="" asp-controller="Cadastros" asp-action="Pacientes" class="btn btnForm btn-sm btn-outline-info">
+                            Cancelar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                    
+                
+            </form>
+        </div>
+
 </div>
 

@@ -7,10 +7,11 @@ namespace SistemaConsultas.Models
 {
     public class Agenda
     {
-        
+        public string? especialidade { get; set; }
+        public string? profissional { get; set; }
+        public string? paciente { get; set; }
         public string? data { get; set; }
         public string? hora { get; set; }
-        public string? profissional { get; set; }
       
     }
 }

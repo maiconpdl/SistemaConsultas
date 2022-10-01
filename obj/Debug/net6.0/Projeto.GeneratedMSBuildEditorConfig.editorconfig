@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/maicon/Documentos/Projetos/SistemaConsultas
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Atendimento/Agenda.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRlbmRpbWVudG8vQWdlbmRhLmNzaHRtbA==
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Agenda/Agenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWdlbmRhL0FnZW5kYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroPaciente.cshtml]
@@ -25,6 +25,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroProfissional.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL2NhZGFzdHJvUHJvZmlzc2lvbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/Pacientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL1BhY2llbnRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/Profissionais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL1Byb2Zpc3Npb25haXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Home/Index.cshtml]
@@ -49,6 +57,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Usuario/cadastroUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9jYWRhc3Ryb1VzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Usuario/Usuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9Vc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/maicon/Documentos/Projetos/SistemaConsultas/Views/_ViewImports.cshtml]
