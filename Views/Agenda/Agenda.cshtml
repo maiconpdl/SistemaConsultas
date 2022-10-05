@@ -6,19 +6,36 @@
             
             <form asp-controller="Agenda" asp-action="salvarAgendamento" class="formLogin">
                 <div class="form-group">
-                    <input asp-for="data" type="date" placeholder="    /    /    " class="inputCadastro form-control form-control-sm"/>
+                    <input asp-for="data" id="calendarioAgenda" type="date" placeholder="    /    /    " class="inputCadastro form-control form-control-sm"/>
                 </div>
                 <div class="form-group">
                     <input asp-for="hora" type="text" placeholder="   :   " class="inputCadastro form-control form-control-sm"/>
                 </div>
+                <script>
+                    
+                </script>
                 <div class="form-group">
                     <input asp-for="especialidade" type="text" placeholder="Especialidade" class="inputCadastro form-control form-control-sm"/>
                 </div>
                 <div class="form-group">
-                    <input asp-for="profissional" type="text" placeholder="Profissional" class="inputCadastro form-control form-control-sm"/>
+                    <select asp-for="profissional" class="inputCadastro form-control form-control-sm">
+                        <option>SELECIONE</option>
+                        
+                        @foreach (var item in Model.profissionais)
+                        {
+                            <option>@Html.DisplayFor(modelItem => item.nome)</option>
+                        }
+                    </select>
                 </div>
                 <div class="form-group">
-                    <input asp-for="paciente" type="text" placeholder="Paciente" class="inputCadastro form-control form-control-sm"/>
+                    <select asp-for="paciente" class="inputCadastro form-control form-control-sm">
+                        <option>SELECIONE</option>
+                        
+                        @foreach (var item in Model.pacientes)
+                        {
+                            <option>@Html.DisplayFor(modelItem => item.nome)</option>
+                        }
+                    </select>
                 </div>
                 
 

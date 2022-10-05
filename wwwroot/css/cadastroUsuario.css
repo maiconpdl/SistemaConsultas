@@ -20,11 +20,11 @@
 .inputCadastroUsuario{
     text-align: left;
     padding: 10px;
-    background-color: rgb(225, 236, 125);
+    background-color: rgb(255, 255, 255);
     width: 90%;
     height: 50px;
     border-radius: 15px;
-    border: none;
+    border: solid 1px grey;
     margin-top: 30px;
     font-weight: 700;
 }

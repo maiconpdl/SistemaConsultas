@@ -21,3 +21,7 @@ $('.btnMenu').click(function(){
 $('.btnFechar').click(function(){
     $('.menu').toggleClass('fechar');
 });
+
+$( "#calendarioAgenda" ).datepicker({
+    minDate: 0
+  });

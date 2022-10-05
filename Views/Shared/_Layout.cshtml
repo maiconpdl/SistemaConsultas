@@ -22,7 +22,7 @@
                     <li><a href="#" class="agendamento">AGENDAMENTO</a>
                         <ul class="itensAgendamento">
                             <li><a asp-controller="Agenda" asp-action="Agenda">AGENDAR</a></li>
-                            <li><a href="#">LISTAR AGENDA</a></li>
+                            <li><a asp-controller="Agenda" asp-action="Atendimento">LISTAR AGENDA</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="cadastro">CADASTRO</a>
@@ -42,7 +42,7 @@
                             <li><a asp-area="" asp-controller="Usuario" asp-action="Usuarios" class="sistema">USUÁRIO DO SISTEMA</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">SAIR</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Login">SAIR</a></li>
                 </ul>
             </nav>
 

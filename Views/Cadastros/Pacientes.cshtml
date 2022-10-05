@@ -44,7 +44,7 @@
                                     </button>
                                 </form>
                                 
-                                <form asp-controller="Cadastros" asp-action="excluirpaciente">
+                                <form asp-controller="Cadastros" asp-action="excluirPaciente" asp-route-id="@item.id" name="id">
                                     <button type="submit" class="btn btn-sm btn-outline-danger rounded-circle">
                                         <i class="fa fa-duotone fa-trash"></i>
 

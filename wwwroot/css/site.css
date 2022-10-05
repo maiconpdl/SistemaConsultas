@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+body{
+    background-color: rgb(219, 241, 240);
+}
+
 .menu{
     background-color: #ffffff;
     width: 300px;

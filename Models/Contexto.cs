@@ -12,6 +12,7 @@ namespace SistemaConsultas.Models
         public DbSet<Usuario> usuarios { get; set; }
         public DbSet<Profissional> profissionais {get; set;}
         public DbSet<Paciente> pacientes {get; set;}
+        public DbSet<Agenda> agendamentos {get; set;}
 
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes){
 
@@ -22,6 +23,7 @@ namespace SistemaConsultas.Models
             builder.ApplyConfiguration(new UsuarioMap());
             builder.ApplyConfiguration(new ProfissionalMap());
             builder.ApplyConfiguration(new PacienteMap());
+            builder.ApplyConfiguration(new AgendaMap());
 
         }
     

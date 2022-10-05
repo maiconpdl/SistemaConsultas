@@ -49,6 +49,14 @@ namespace SistemaConsultas.Controllers
             return View();
         }
 
+        public async Task<IActionResult> excluirPaciente(int id){
+
+            _contexto.Remove(_contexto.pacientes.Single(p => p.id == id));
+            await _contexto.SaveChangesAsync();
+
+            return RedirectToAction("Pacientes");
+        }
+
         public async Task<IActionResult> salvarProfissional(Profissional profissional){
             if(ModelState.IsValid){
                 await _contexto.profissionais.AddAsync(profissional);
@@ -57,6 +65,14 @@ namespace SistemaConsultas.Controllers
             }
 
             return View();
+        }
+
+        public async Task<IActionResult> excluirProfissional(int id){
+
+            _contexto.Remove(_contexto.profissionais.Single(p => p.id == id));
+            await _contexto.SaveChangesAsync();
+
+            return RedirectToAction("Profissionais");
         }
 
 

@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using SistemaConsultas.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace SistemaConsultas.Controllers
 {
@@ -12,16 +8,43 @@ namespace SistemaConsultas.Controllers
     public class AgendaController : Controller
     {
         private readonly ILogger<AgendaController> _logger;
+        private readonly Contexto _contexto;
 
-        public AgendaController(ILogger<AgendaController> logger)
+        public AgendaController(ILogger<AgendaController> logger, Contexto contexto)
         {
             _logger = logger;
+            _contexto = contexto;
         }
 
-        public IActionResult Agenda()
+        [HttpGet("agendar")]
+        public async Task<IActionResult> Agenda()
         {
-            return View();
+            Agenda agenda = new Agenda();
+            agenda.profissionais = await _contexto.profissionais.ToListAsync();
+            agenda.pacientes = await _contexto.pacientes.ToListAsync();
+            return View(agenda);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> salvarAgendamento(Agenda agenda)
+        {
+            if(ModelState.IsValid){
+                await _contexto.agendamentos.AddRangeAsync(agenda);
+                await _contexto.SaveChangesAsync();
+
+                return RedirectToAction("Agenda");
+            }    
+
+            return RedirectToAction("Agenda");
+        }
+
+        [HttpGet("atender")]
+        public async Task<IActionResult> Atendimento()
+        {
+            
+            return View(await _contexto.agendamentos.ToListAsync());
+        }
+
 
         
     }
