@@ -37,8 +37,8 @@
                         <td>
                             <div class="row">
                                
-                                <form asp-controller="Cadastros" asp-action="editarProfissional">
-                                    <button type="submit" title="Atender" class="btn btn-sm btn-outline-primary rounded-circle">
+                                <form>
+                                    <button asp-controller="Agenda" asp-action="Atender" asp-route-paciente="@item.id" title="Atender" class="btn btn-sm btn-outline-primary rounded-circle">
                                         <i class="fa fa-solid fa-check"></i>
 
                                     </button>

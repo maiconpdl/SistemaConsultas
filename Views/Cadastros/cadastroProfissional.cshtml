@@ -38,9 +38,13 @@
                 <div class="form-group">
                     <input asp-for="numero" type="text" placeholder="Número" class="inputCadastro form-control form-control-sm"/>
                 </div>
-                <div class="form-group">
-                    <input asp-for="especialidade" type="text" placeholder="CBO" class="inputCadastro form-control form-control-sm"/>
-                </div>
+                <select asp-for="especialidade" class="inputCadastro form-control form-control-sm">
+                    <option>ESPECIALIDADE</option>
+                    @foreach (var item in Model.especialidades)
+                    {
+                        <option>@Html.DisplayFor(modelItem => item.nome)</option>
+                    }
+                </select>
                 <div class="form-group">
                     <input asp-for="registro" type="text" placeholder="Registro" class="inputCadastro form-control form-control-sm"/> 
                 </div>

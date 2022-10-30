@@ -1,11 +1,12 @@
 
 <div class="container">
     <form class="formLogin">
-        
-            <input type="text" placeholder="USUÁRIO" class="inputLogin"/>
-            <input type="password" placeholder="SENHA" class="inputLogin"/>
-            <input type="button" value="ENTRAR" class="inputLogin btnForm"/>
+            <input name="usuario" type="text" placeholder="USUÁRIO" class="inputLogin"/>
+            <input name="senha" type="password" placeholder="SENHA" class="inputLogin"/>
+            <input asp-controller="Home" asp-action="validaUsuario" type="submit" value="ENTRAR" class="inputLogin btnForm"/>
         
     </form>
+    </br>
+        <h3>@ViewData["mensagem"].ToString()</h3>
 </div>
 

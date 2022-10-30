@@ -1,5 +1,12 @@
 @model IEnumerable<SistemaConsultas.Models.Paciente>
+
 <div class="container p-5">
+    <div>
+        <form asp-controller="Cadastros" asp-action="Pacientes">
+            <input type="text" name="paciente" value="">
+            <input type="submit" Value="Buscar">
+        </form>
+    </div>
     <div class="border border-light rounded p-5">
         <table class="table table-striped table-hover table-sm">
             <thead>

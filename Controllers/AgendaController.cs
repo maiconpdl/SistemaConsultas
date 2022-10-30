@@ -22,6 +22,7 @@ namespace SistemaConsultas.Controllers
             Agenda agenda = new Agenda();
             agenda.profissionais = await _contexto.profissionais.ToListAsync();
             agenda.pacientes = await _contexto.pacientes.ToListAsync();
+            agenda.especialidades = await _contexto.especialidades.ToListAsync();
             return View(agenda);
         }
 
@@ -45,7 +46,10 @@ namespace SistemaConsultas.Controllers
             return View(await _contexto.agendamentos.ToListAsync());
         }
 
-
+        public async Task<IActionResult> Atender(int id){
+            
+            return View(await _contexto.pacientes.Where(p => p.id == id).ToListAsync());
+        }
         
     }
 }

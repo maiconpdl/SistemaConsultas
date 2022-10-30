@@ -111,6 +111,41 @@ namespace Projeto.Migrations
                         principalColumn: "id");
                 });
 
+            migrationBuilder.CreateTable(
+                name: "especialidades",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    nome = table.Column<string>(type: "text", nullable: true),
+                    Agendaid = table.Column<int>(type: "integer", nullable: true),
+                    Profissionalid = table.Column<int>(type: "integer", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_especialidades", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_especialidades_agendamentos_Agendaid",
+                        column: x => x.Agendaid,
+                        principalTable: "agendamentos",
+                        principalColumn: "id");
+                    table.ForeignKey(
+                        name: "FK_especialidades_profissionais_Profissionalid",
+                        column: x => x.Profissionalid,
+                        principalTable: "profissionais",
+                        principalColumn: "id");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_especialidades_Agendaid",
+                table: "especialidades",
+                column: "Agendaid");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_especialidades_Profissionalid",
+                table: "especialidades",
+                column: "Profissionalid");
+
             migrationBuilder.CreateIndex(
                 name: "IX_pacientes_Agendaid",
                 table: "pacientes",
@@ -125,13 +160,16 @@ namespace Projeto.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "especialidades");
+
+            migrationBuilder.DropTable(
                 name: "pacientes");
 
             migrationBuilder.DropTable(
-                name: "profissionais");
+                name: "usuarios");
 
             migrationBuilder.DropTable(
-                name: "usuarios");
+                name: "profissionais");
 
             migrationBuilder.DropTable(
                 name: "agendamentos");

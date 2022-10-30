@@ -10,6 +10,7 @@ namespace SistemaConsultas.Models
         
         public string? registro { get; set; }
         public string? especialidade { get; set; }
+        public List<Especialidade>? especialidades {get; set;}
 
     }
 }

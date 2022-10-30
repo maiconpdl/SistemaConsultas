@@ -1,0 +1,29 @@
+@model IEnumerable<SistemaConsultas.Models.Paciente>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <div class="container p-5">
+            <label>Paciente</label>
+            @foreach (var item in Model)
+            {
+                
+                <input type="text" value="@Html.DisplayFor(modelItem => item.nome)">
+            }
+            <label for="diagnostico">Hipótese Diagnóstica</label>
+            <textarea id="diagnostico"></textarea>
+            <select id="cid">
+                <option>um</option>
+                <option>dois</option>
+                <option>tres</option>
+            </select>
+        </div>
+        <script>
+            $(document).ready(function() {
+            $('#cid').select2();
+            });
+        </script>
+    </body>
+</html>

@@ -18,8 +18,11 @@ public class UsuarioController : Controller
         _contexto = contexto;
     }
 
-    public async Task<IActionResult> Usuarios()
+    public async Task<IActionResult> Usuarios(string usuario)
     {
+        if(usuario != null){
+                return View(await _contexto.usuarios.Where(p => p.nome.Contains(usuario)).ToListAsync());
+            }
         return View(await _contexto.usuarios.ToListAsync());
     }
 
@@ -39,7 +42,7 @@ public class UsuarioController : Controller
         return View(cadastroUsuario);
     }
 
-
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

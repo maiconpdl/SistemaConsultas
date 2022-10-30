@@ -23,17 +23,37 @@ namespace SistemaConsultas.Controllers
         }
 
         
-        public async Task<IActionResult> Profissionais()
+        public async Task<IActionResult> Profissionais(string profissional)
         {
+            if(profissional != null){
+                return View(await _contexto.profissionais.Where(p => p.nome.Contains(profissional)).ToListAsync());
+            }
             return View(await _contexto.profissionais.ToListAsync());
         }
 
-        public async Task<IActionResult> Pacientes()
+        public async Task<IActionResult> Pacientes(string paciente)
         {
+                Console.WriteLine(paciente);
+            if(paciente != null){
+                return View(await _contexto.pacientes.Where(p => p.nome.Contains(paciente)).ToListAsync());
+            }
             return View(await _contexto.pacientes.ToListAsync());
         }
 
-        public IActionResult cadastroProfissional()
+        public async Task<IActionResult> Especialidades()
+        {
+            return View(await _contexto.especialidades.ToListAsync());
+        }
+
+        public async Task<IActionResult> cadastroProfissional()
+        {
+            Profissional profissional = new Profissional();
+            profissional.especialidades = await _contexto.especialidades.ToListAsync();
+
+            return View(profissional);
+        }
+
+        public IActionResult cadastroEspecialidade()
         {
             
 
@@ -76,7 +96,15 @@ namespace SistemaConsultas.Controllers
         }
 
 
-
+        public async Task<IActionResult> salvarEspecialidade(Especialidade especialidade){
+            if(ModelState.IsValid){
+                await _contexto.especialidades.AddRangeAsync(especialidade);
+                await _contexto.SaveChangesAsync();
+                return RedirectToAction("Especialidades");
+            }
+            return View();
+        }
         
+      
     }
 }

@@ -1,0 +1,33 @@
+@model SistemaConsultas.Models.Especialidade
+<div class="container p-5">
+        <div class="border border-light rounded p-5 shadow">
+            <h6>Cadastro de Paciente</h6>
+            </hr>
+            
+            <form asp-controller="Cadastros" asp-action="salvarEspecialidade" class="formLogin">
+                <div class="form-group">
+                    <input asp-for="nome" type="text" placeholder="nome" class="inputCadastro form-control form-control-sm"/>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="submit" value="GRAVAR" class="btn btnForm btn-sm btn-outline-info"/>
+                        </div>
+                        <div class="pl-1 col-6">
+                            <a asp-area="" asp-controller="Cadastros" asp-action="Especialidades" class="btn btnForm btn-sm btn-outline-info">
+                            Cancelar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                    
+                
+            </form>
+        </div>
+
+</div>
+
+</div>
+

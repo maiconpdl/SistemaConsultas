@@ -12,7 +12,7 @@ using SistemaConsultas.Models;
 namespace Projeto.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20221004222959_conexaoBD")]
+    [Migration("20221030023438_conexaoBD")]
     partial class conexaoBD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,6 +54,32 @@ namespace Projeto.Migrations
                     b.HasKey("id");
 
                     b.ToTable("agendamentos");
+                });
+
+            modelBuilder.Entity("SistemaConsultas.Models.Especialidade", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<int?>("Agendaid")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("Profissionalid")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("nome")
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("Agendaid");
+
+                    b.HasIndex("Profissionalid");
+
+                    b.ToTable("especialidades");
                 });
 
             modelBuilder.Entity("SistemaConsultas.Models.Paciente", b =>
@@ -252,6 +278,17 @@ namespace Projeto.Migrations
                     b.ToTable("usuarios");
                 });
 
+            modelBuilder.Entity("SistemaConsultas.Models.Especialidade", b =>
+                {
+                    b.HasOne("SistemaConsultas.Models.Agenda", null)
+                        .WithMany("especialidades")
+                        .HasForeignKey("Agendaid");
+
+                    b.HasOne("SistemaConsultas.Models.Profissional", null)
+                        .WithMany("especialidades")
+                        .HasForeignKey("Profissionalid");
+                });
+
             modelBuilder.Entity("SistemaConsultas.Models.Paciente", b =>
                 {
                     b.HasOne("SistemaConsultas.Models.Agenda", null)
@@ -268,9 +305,16 @@ namespace Projeto.Migrations
 
             modelBuilder.Entity("SistemaConsultas.Models.Agenda", b =>
                 {
+                    b.Navigation("especialidades");
+
                     b.Navigation("pacientes");
 
                     b.Navigation("profissionais");
+                });
+
+            modelBuilder.Entity("SistemaConsultas.Models.Profissional", b =>
+                {
+                    b.Navigation("especialidades");
                 });
 #pragma warning restore 612, 618
         }

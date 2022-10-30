@@ -8,6 +8,7 @@ namespace SistemaConsultas.Models
     public class Agenda
     {
         public int id {get; set;}
+        public List<Especialidade> especialidades { get; set; }
         public string? especialidade { get; set; }
         public List<Profissional>? profissionais { get; set; }
         public string? profissional {get; set;}

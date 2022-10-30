@@ -25,3 +25,4 @@ $('.btnFechar').click(function(){
 $( "#calendarioAgenda" ).datepicker({
     minDate: 0
   });
+
