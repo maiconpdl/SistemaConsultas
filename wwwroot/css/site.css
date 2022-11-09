@@ -9,7 +9,7 @@ body{
 }
 
 .menu{
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 300px;
     height: 100%;
     position: fixed;
@@ -108,10 +108,12 @@ body{
 }
 
 .btnFechar{
+
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 20px;
     color: #000000;
+    background-color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -124,7 +126,7 @@ body{
     background-color: #ffffff;
     width: 300px;
     height: 100%;
-    position: fixed;
+    
     left: -300px;
     margin-top: -10;
     padding-top: 30px;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/maicon/Documentos/Projetos/SistemaConsultas/Projeto.csproj": {}
+    "/home/maicon/Documentos/SistemaConsultas/Projeto.csproj": {}
   },
   "projects": {
-    "/home/maicon/Documentos/Projetos/SistemaConsultas/Projeto.csproj": {
+    "/home/maicon/Documentos/SistemaConsultas/Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maicon/Documentos/Projetos/SistemaConsultas/Projeto.csproj",
+        "projectUniqueName": "/home/maicon/Documentos/SistemaConsultas/Projeto.csproj",
         "projectName": "Projeto",
-        "projectPath": "/home/maicon/Documentos/Projetos/SistemaConsultas/Projeto.csproj",
+        "projectPath": "/home/maicon/Documentos/SistemaConsultas/Projeto.csproj",
         "packagesPath": "/home/maicon/.nuget/packages/",
-        "outputPath": "/home/maicon/Documentos/Projetos/SistemaConsultas/obj/",
+        "outputPath": "/home/maicon/Documentos/SistemaConsultas/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/maicon/.nuget/NuGet/NuGet.Config"

@@ -12,7 +12,7 @@ using SistemaConsultas.Models;
 namespace Projeto.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20221030023438_conexaoBD")]
+    [Migration("20221109193929_conexaoBD")]
     partial class conexaoBD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,6 +37,7 @@ namespace Projeto.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("especialidade")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("hora")

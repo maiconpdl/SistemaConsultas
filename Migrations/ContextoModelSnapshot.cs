@@ -35,6 +35,7 @@ namespace Projeto.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("especialidade")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("hora")

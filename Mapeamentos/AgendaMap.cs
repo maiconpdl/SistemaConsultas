@@ -15,6 +15,7 @@ namespace SistemaConsultas.Mapeamentos
             builder.HasKey(a => a.id);
             builder.Property(a => a.profissional).IsRequired();
             builder.Property(a => a.paciente).IsRequired();
+            builder.Property(a => a.especialidade).IsRequired();
             builder.Property(a => a.data).IsRequired();
             builder.Property(a => a.hora).IsRequired();
         }

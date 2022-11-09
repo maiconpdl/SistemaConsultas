@@ -8,85 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Projeto
 build_property.RootNamespace = Projeto
-build_property.ProjectDir = /home/maicon/Documentos/Projetos/SistemaConsultas/
+build_property.ProjectDir = /home/maicon/Documentos/SistemaConsultas/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/maicon/Documentos/Projetos/SistemaConsultas
+build_property.MSBuildProjectDirectory = /home/maicon/Documentos/SistemaConsultas
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Agenda/Agenda.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Agenda/Agenda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWdlbmRhL0FnZW5kYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Agenda/Atender.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Agenda/Atender.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWdlbmRhL0F0ZW5kZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Agenda/Atendimento.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Agenda/Atendimento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWdlbmRhL0F0ZW5kaW1lbnRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroEspecialidade.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Cadastros/cadastroEspecialidade.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL2NhZGFzdHJvRXNwZWNpYWxpZGFkZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroPaciente.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Cadastros/cadastroPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL2NhZGFzdHJvUGFjaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/cadastroProfissional.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Cadastros/cadastroProfissional.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL2NhZGFzdHJvUHJvZmlzc2lvbmFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/Especialidades.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Cadastros/Especialidades.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL0VzcGVjaWFsaWRhZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/Pacientes.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Cadastros/Pacientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL1BhY2llbnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Cadastros/Profissionais.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Cadastros/Profissionais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm9zL1Byb2Zpc3Npb25haXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Home/Index.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Home/Login.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Home/Privacy.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Shared/_Layout.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Usuario/cadastroUsuario.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Usuario/cadastroUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9jYWRhc3Ryb1VzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Usuario/Usuarios.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Usuario/Usuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9Vc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/_ViewImports.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/_ViewStart.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/maicon/Documentos/Projetos/SistemaConsultas/Views/Shared/_Layout2.cshtml]
+[/home/maicon/Documentos/SistemaConsultas/Views/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-979eqskxhz

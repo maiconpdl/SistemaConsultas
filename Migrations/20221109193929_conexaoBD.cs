@@ -15,7 +15,7 @@ namespace Projeto.Migrations
                 {
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    especialidade = table.Column<string>(type: "text", nullable: true),
+                    especialidade = table.Column<string>(type: "text", nullable: false),
                     profissional = table.Column<string>(type: "text", nullable: false),
                     paciente = table.Column<string>(type: "text", nullable: false),
                     data = table.Column<string>(type: "text", nullable: false),

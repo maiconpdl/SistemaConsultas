@@ -29,14 +29,12 @@ namespace SistemaConsultas.Controllers
         [HttpPost]
         public async Task<IActionResult> salvarAgendamento(Agenda agenda)
         {
-            if(ModelState.IsValid){
+            
                 await _contexto.agendamentos.AddRangeAsync(agenda);
                 await _contexto.SaveChangesAsync();
 
                 return RedirectToAction("Agenda");
-            }    
-
-            return RedirectToAction("Agenda");
+         
         }
 
         [HttpGet("atender")]

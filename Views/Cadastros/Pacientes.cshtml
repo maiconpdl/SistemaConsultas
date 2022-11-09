@@ -1,13 +1,25 @@
 @model IEnumerable<SistemaConsultas.Models.Paciente>
 
 <div class="container p-5">
-    <div>
-        <form asp-controller="Cadastros" asp-action="Pacientes">
-            <input type="text" name="paciente" value="">
-            <input type="submit" Value="Buscar">
-        </form>
+    
+    <div class="cabeçalho">
+        <h2>Pacientes</h2>
     </div>
-    <div class="border border-light rounded p-5">
+    <div class="formularios">
+        <center>
+        <form asp-controller="Cadastros" asp-action="Pacientes" class="busca">
+            <input type="text" name="paciente" value="" class="inputCadastro form-control form-control-sm">
+            </br>
+            <button type="submit" class="btn btn-sm btn-success">
+                Buscar <i class="fa fa-light fa-magnifying-glass"></i>
+            </button>
+            <button type="submit" class="btn btn-sm btn-secondary">
+                Limpar
+            </button>
+        </form>
+        </center>
+    </div>
+    <div class="border border-light rounded p-5 formularios">
         <table class="table table-striped table-hover table-sm">
             <thead>
                 <tr class="thead-light">
@@ -64,7 +76,7 @@
                 }
             </tbody>
         </table>
-        <a asp-area="" asp-controller="Cadastros" asp-action="cadastroPaciente" class="btn btn-sm btn-outline-info">
+        <a asp-area="" asp-controller="Cadastros" asp-action="cadastroPaciente" class="btn btn-sm btn-info">
             Novo
         </a>
     </div>

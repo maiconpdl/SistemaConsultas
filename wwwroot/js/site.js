@@ -15,11 +15,18 @@ $('.sistema').click(function(){
 });
 
 $('.btnMenu').click(function(){
+    let btn = document.querySelector('.menu');
+    btn.classList.remove('fechar');
+    
     $('.menu').toggleClass('mostra');
 });
 
 $('.btnFechar').click(function(){
     $('.menu').toggleClass('fechar');
+    setTimeout(function(){ 
+        let btn = document.querySelector('.menu');
+        btn.classList.remove('mostra');
+    }, 100);
 });
 
 $( "#calendarioAgenda" ).datepicker({
